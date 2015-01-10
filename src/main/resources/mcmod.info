@@ -1,0 +1,28 @@
+[
+{
+  "modid": "scottstweaks",
+  "name": "Scott's Tweaks",
+  "description": "A Minecraft mod that adds a few small tweaks to the game.",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "ScottKillen"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "requiredMods": [
+    "koresample"
+  ],
+  "dependencies": [
+    "koresample"
+  ],
+  "dependants": [
+  ],
+  "useDependencyInformation": true
+}
+]

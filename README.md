@@ -6,6 +6,8 @@
 
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
+- Live chickens drop feathers as the go about their lives.
+
 [Contributing](#contributing)
 
 [Support](#support)

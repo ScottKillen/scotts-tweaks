@@ -1,4 +1,4 @@
-package com.scottkillen.mod.scottstweaks.chicken;
+package com.scottkillen.mod.scottstweaks.tweaks.chicken;
 
 import com.scottkillen.mod.koresample.ForgeEventListener;
 import com.scottkillen.mod.scottstweaks.config.Settings;

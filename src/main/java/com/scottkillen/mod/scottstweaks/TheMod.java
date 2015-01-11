@@ -5,7 +5,7 @@ import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 import com.scottkillen.mod.koresample.compat.Integrates;
 import com.scottkillen.mod.koresample.config.ConfigEventHandler;
-import com.scottkillen.mod.scottstweaks.chicken.ChickenPlucker;
+import com.scottkillen.mod.scottstweaks.tweaks.chicken.ChickenPlucker;
 import com.scottkillen.mod.scottstweaks.config.Settings;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;

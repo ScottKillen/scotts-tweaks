@@ -7,11 +7,11 @@ import com.scottkillen.mod.koresample.compat.Integrates;
 import com.scottkillen.mod.koresample.config.ConfigEventHandler;
 import com.scottkillen.mod.scottstweaks.tweaks.chicken.ChickenPlucker;
 import com.scottkillen.mod.scottstweaks.config.Settings;
+import com.scottkillen.mod.scottstweaks.tweaks.planting.Planter;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
@@ -55,11 +55,7 @@ public class TheMod
     public void onFMLInitialization(FMLInitializationEvent unused)
     {
         new ChickenPlucker().listen(MinecraftForge.EVENT_BUS);
-    }
-
-    @EventHandler
-    public void onFMLPostInitialization(FMLPostInitializationEvent unused)
-    {
+        new Planter().listen(MinecraftForge.EVENT_BUS);
     }
 
     @Override

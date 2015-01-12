@@ -16,10 +16,12 @@
   ],
   "parent":"",
   "requiredMods": [
-    "koresample"
+    "Forge",
+    "koresample@[${kore_version},2.0.0)"
   ],
   "dependencies": [
-    "koresample"
+    "Forge",
+    "koresample@[${kore_version},2.0.0)"
   ],
   "dependants": [
   ],

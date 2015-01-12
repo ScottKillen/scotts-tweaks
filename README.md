@@ -4,6 +4,8 @@
 [changelog.md]: https://github.com/MinecraftModArchive/Dendrology/blob/develop/src/main/resources/CHANGELOG.md
 [koresample]: https://github.com/MinecraftModArchive/KoreSample/releases/latest
 
+![Logo](https://cloud.githubusercontent.com/assets/1509989/5713248/03b7fbb8-9a88-11e4-915f-8d9f18d542d4.png)
+
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
 - Live chickens drop feathers as the go about their lives.

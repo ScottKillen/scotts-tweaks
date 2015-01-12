@@ -1,8 +1,8 @@
 ## Scott's Tweaks
 **IN DEVELOPMENT**: ([changelog][changelog.md])<br />
-*DEPENDS ON*: [Kore Sample 1.1.0 for MC 1.7.10][koresample]
+*DEPENDS ON*: [Kore Sample 1.2.0 (or later) for MC 1.7.10][koresample]
 [changelog.md]: https://github.com/MinecraftModArchive/Dendrology/blob/develop/src/main/resources/CHANGELOG.md
-[koresample]: https://github.com/MinecraftModArchive/KoreSample/releases/download/v1.1.0/KoreSample-1.7.10-1.1.0.jar
+[koresample]: https://github.com/MinecraftModArchive/KoreSample/releases/latest
 
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 

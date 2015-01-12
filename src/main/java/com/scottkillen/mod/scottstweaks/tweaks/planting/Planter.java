@@ -1,6 +1,6 @@
 package com.scottkillen.mod.scottstweaks.tweaks.planting;
 
-import com.scottkillen.mod.koresample.ForgeEventListener;
+import com.scottkillen.mod.koresample.common.util.event.ForgeEventListener;
 import com.scottkillen.mod.scottstweaks.config.Settings;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.block.Block;

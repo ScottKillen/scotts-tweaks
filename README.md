@@ -1,12 +1,16 @@
 ## Scott's Tweaks
-**IN DEVELOPMENT**: ([changelog][changelog.md])<br />
-*DEPENDS ON*: [Kore Sample 1.1.0 for MC 1.7.10][koresample]
+**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.0.0 for MC 1.7.10][release] ([changelog][changelog.md])<br />
+*DEPENDS ON*: [Kore Sample 1.2.0 (or later) for MC 1.7.10][koresample]
+[release]: https://github.com/MinecraftModArchive/ScottsTweaks/releases/download/v1.0.0/ScottsTweaks-1.7.10-1.0.0.jar
 [changelog.md]: https://github.com/MinecraftModArchive/Dendrology/blob/develop/src/main/resources/CHANGELOG.md
-[koresample]: https://github.com/MinecraftModArchive/KoreSample/releases/download/v1.1.0/KoreSample-1.7.10-1.1.0.jar
+[koresample]: https://github.com/MinecraftModArchive/KoreSample/releases/latest
+
+![Logo](https://cloud.githubusercontent.com/assets/1509989/5713248/03b7fbb8-9a88-11e4-915f-8d9f18d542d4.png)
 
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
 - Live chickens drop feathers as the go about their lives.
+- Growables (saplings, etc.) plant themselves if possible.
 
 [Contributing](#contributing)
 

@@ -10,6 +10,12 @@ public enum Settings implements ConfigSyncable
 {
     INSTANCE;
     public static final String CONFIG_VERSION = "1";
+    private static final String CATEGORY_FEATHER_DROP =
+            String.format("%s%sfeather_drop", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
+
+    private static final String CATEGORY_PLANTING =
+            String.format("%s%splanting", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
+
 
     private int chickFeatherQuantity = 1;
     private int henFeatherQuantity = 1;
@@ -17,11 +23,11 @@ public enum Settings implements ConfigSyncable
     private int henFeatherRarity = 25000;
     private boolean doChicksDropFeathers = true;
     private boolean doHensDropFeathers = true;
+    private boolean doPlantGrowable = true;
 
-    private static int get(Configuration config, String settingName, String category, int defaultValue,
-                           int minumumValue, int maximumValue)
+    private static int get(Configuration config, String settingName, int defaultValue, int minumumValue, int maximumValue)
     {
-        return config.getInt(settingName, category, defaultValue, minumumValue, maximumValue,
+        return config.getInt(settingName, CATEGORY_FEATHER_DROP, defaultValue, minumumValue, maximumValue,
                 getLocalizedComment(settingName));
     }
 
@@ -46,16 +52,16 @@ public enum Settings implements ConfigSyncable
     @Override
     public void syncConfig(Configuration config)
     {
-        final String featherDropCategory =
-                String.format("%s%sfeather_drop", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
-        chickFeatherQuantity = get(config, "chickFeatherQuantity", featherDropCategory, chickFeatherQuantity, 1, 10);
+        chickFeatherQuantity = get(config, "chickFeatherQuantity", chickFeatherQuantity, 1, 10);
         chickFeatherRarity =
-                get(config, "chickFeatherRarity", featherDropCategory, chickFeatherRarity, 6000, Integer.MAX_VALUE);
-        doChicksDropFeathers = get(config, "doChicksDropFeathers", featherDropCategory, doChicksDropFeathers);
-        doHensDropFeathers = get(config, "doHensDropFeathers", featherDropCategory, doHensDropFeathers);
-        henFeatherQuantity = get(config, "henFeatherQuantity", featherDropCategory, henFeatherQuantity, 1, 10);
+                get(config, "chickFeatherRarity", chickFeatherRarity, 6000, Integer.MAX_VALUE);
+        doChicksDropFeathers = get(config, "doChicksDropFeathers", CATEGORY_FEATHER_DROP, doChicksDropFeathers);
+        doHensDropFeathers = get(config, "doHensDropFeathers", CATEGORY_FEATHER_DROP, doHensDropFeathers);
+        henFeatherQuantity = get(config, "henFeatherQuantity", henFeatherQuantity, 1, 10);
         henFeatherRarity =
-                get(config, "henFeatherRarity", featherDropCategory, henFeatherRarity, 6000, Integer.MAX_VALUE);
+                get(config, "henFeatherRarity", henFeatherRarity, 6000, Integer.MAX_VALUE);
+
+        doPlantGrowable = get(config, "doPlantGrowable", CATEGORY_PLANTING, doPlantGrowable);
     }
 
     public int chickFeatherQuantity() { return chickFeatherQuantity; }
@@ -65,6 +71,8 @@ public enum Settings implements ConfigSyncable
     public boolean doChicksDropFeathers() { return doChicksDropFeathers; }
 
     public boolean doHensDropFeathers() { return doHensDropFeathers; }
+
+    public boolean doPlantGrowable() { return doPlantGrowable;}
 
     public int henFeatherQuantity() { return henFeatherQuantity; }
 
@@ -76,6 +84,6 @@ public enum Settings implements ConfigSyncable
         return Objects.toStringHelper(this).add("chickFeatherQuantity", chickFeatherQuantity)
                 .add("henFeatherQuantity", henFeatherQuantity).add("chickFeatherRarity", chickFeatherRarity)
                 .add("henFeatherRarity", henFeatherRarity).add("doChicksDropFeathers", doChicksDropFeathers)
-                .add("doHensDropFeathers", doHensDropFeathers).toString();
+                .add("doHensDropFeathers", doHensDropFeathers).add("doPlantGrowable", doPlantGrowable).toString();
     }
 }

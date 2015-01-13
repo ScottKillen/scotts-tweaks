@@ -9,7 +9,7 @@
 
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
-- Live chickens drop feathers as the go about their lives.
+- Live chickens drop feathers as they go about their lives.
 - Growables (saplings, etc.) plant themselves if possible.
 
 [Contributing](#contributing)

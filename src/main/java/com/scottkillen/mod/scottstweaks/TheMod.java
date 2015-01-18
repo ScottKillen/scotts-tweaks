@@ -4,9 +4,10 @@ import com.google.common.base.Objects;
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 import com.scottkillen.mod.koresample.compat.Integrates;
+import com.scottkillen.mod.koresample.compat.versionchecker.Versioned;
 import com.scottkillen.mod.koresample.config.ConfigEventHandler;
-import com.scottkillen.mod.scottstweaks.tweaks.chicken.ChickenPlucker;
 import com.scottkillen.mod.scottstweaks.config.Settings;
+import com.scottkillen.mod.scottstweaks.tweaks.chicken.ChickenPlucker;
 import com.scottkillen.mod.scottstweaks.tweaks.planting.Planter;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -18,18 +19,15 @@ import net.minecraftforge.common.config.Configuration;
 import java.util.List;
 
 @SuppressWarnings({
-        "StaticNonFinalField",
-        "WeakerAccess",
-        "StaticVariableMayNotBeInitialized",
-        "NonConstantFieldWithUpperCaseName"
+        "StaticNonFinalField", "WeakerAccess", "StaticVariableMayNotBeInitialized", "NonConstantFieldWithUpperCaseName"
 })
 @Mod(modid = TheMod.MOD_ID, name = TheMod.MOD_NAME, version = TheMod.MOD_VERSION, useMetadata = true, guiFactory = TheMod.MOD_GUI_FACTORY)
-public class TheMod
+public class TheMod implements Versioned
 {
-    public static final String MOD_ID = "scottstweaks";
-    public static final String MOD_NAME = "Scott's Tweaks";
-    public static final String MOD_VERSION = "${mod_version}";
-    public static final String MOD_GUI_FACTORY = "com.scottkillen.mod.scottstweaks.config.client.ModGuiFactory";
+    static final String MOD_GUI_FACTORY = "com.scottkillen.mod.scottstweaks.config.client.ModGuiFactory";
+    static final String MOD_ID = "scottstweaks";
+    static final String MOD_NAME = "Scott's Tweaks";
+    static final String MOD_VERSION = "${mod_version}";
     @Instance(MOD_ID)
     public static TheMod INSTANCE;
     private final List<Integrates> integrators = Lists.newArrayList();
@@ -48,6 +46,7 @@ public class TheMod
                 new ConfigEventHandler(MOD_ID, event.getSuggestedConfigurationFile(), Settings.INSTANCE,
                         Settings.CONFIG_VERSION));
         configEventHandler.get().activate();
+        com.scottkillen.mod.koresample.TheMod.INSTANCE.addVersionCheck(this);
     }
 
     @SuppressWarnings("MethodMayBeStatic")
@@ -56,6 +55,18 @@ public class TheMod
     {
         new ChickenPlucker().listen(MinecraftForge.EVENT_BUS);
         new Planter().listen(MinecraftForge.EVENT_BUS);
+    }
+
+    @Override
+    public String modID()
+    {
+        return MOD_ID;
+    }
+
+    @Override
+    public String versionInfoURL()
+    {
+        return "https://raw.githubusercontent.com/ScottKillen/glowing-ninja/master/ScottsTweaks.json";
     }
 
     @Override

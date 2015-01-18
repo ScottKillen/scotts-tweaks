@@ -1,9 +1,10 @@
 ## Scott's Tweaks
-**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.0.1 for MC 1.7.10][release] ([changelog][changelog.md])<br />
+**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.0.1 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
 *DEPENDS ON*: [Kore Sample 1.2.2 (or later) for MC 1.7.10][koresample]
-[release]: https://github.com/MinecraftModArchive/ScottsTweaks/releases/download/v1.0.1/ScottsTweaks-1.7.10-1.0.1.jar
+[latest]: https://github.com/MinecraftModArchive/ScottsTweaks/releases/latest
+[releases]: https://github.com/MinecraftModArchive/ScottsTweaks/releases
 [changelog.md]: https://github.com/MinecraftModArchive/Dendrology/blob/develop/src/main/resources/CHANGELOG.md
-[koresample]: https://github.com/MinecraftModArchive/KoreSample/releases/latest
+[koresample]: http://scottk.us/KoreSample
 
 ![Logo](https://cloud.githubusercontent.com/assets/1509989/5713248/03b7fbb8-9a88-11e4-915f-8d9f18d542d4.png)
 

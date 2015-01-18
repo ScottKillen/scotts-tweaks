@@ -1,3 +1,7 @@
+## Unreleased
+- Added support for [Version Checker][vc_url].
+[vc_url]: http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2091981-version-checker-auto-update-mods-and-clean
+
 ## 1.0.0
 - Added feather drops for live chickens.
 - Growables (saplings, etc.) plant themselves if possible.

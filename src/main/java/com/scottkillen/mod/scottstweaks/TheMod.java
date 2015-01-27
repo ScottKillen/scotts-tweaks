@@ -7,6 +7,7 @@ import com.scottkillen.mod.koresample.compat.Integrates;
 import com.scottkillen.mod.koresample.compat.versionchecker.Versioned;
 import com.scottkillen.mod.koresample.config.ConfigEventHandler;
 import com.scottkillen.mod.scottstweaks.config.Settings;
+import com.scottkillen.mod.scottstweaks.tweaks.ClayGenerator;
 import com.scottkillen.mod.scottstweaks.tweaks.chicken.ChickenPlucker;
 import com.scottkillen.mod.scottstweaks.tweaks.planting.Planter;
 import cpw.mods.fml.common.Mod;
@@ -55,6 +56,7 @@ public class TheMod implements Versioned
     {
         new ChickenPlucker().listen(MinecraftForge.EVENT_BUS);
         new Planter().listen(MinecraftForge.EVENT_BUS);
+        new ClayGenerator().install();
     }
 
     @Override

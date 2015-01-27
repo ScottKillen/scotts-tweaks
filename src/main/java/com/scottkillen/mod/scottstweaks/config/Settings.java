@@ -23,8 +23,8 @@ public enum Settings implements ConfigSyncable
     private int chickFeatherRarity = 50000;
     private int henFeatherRarity = 25000;
     private int clayVeinQuantity = 6;
-    private int clayVeinSize = 12;
-    private int clayVeinSizeVariation = 6;
+    private int clayVeinSizeMax = 18;
+    private int clayVeinSizeMin = 12;
     private int claySpawnYMin = 50;
     private int claySpawnYMax = 60;
     private boolean doChicksDropFeathers = true;
@@ -71,9 +71,8 @@ public enum Settings implements ConfigSyncable
         doPlantGrowable = get(config, "doPlantGrowable", CATEGORY_PLANTING, doPlantGrowable);
 
         clayVeinQuantity = get(config, "clayVeinQuantity", CATEGORY_CLAY_SPAWN, clayVeinQuantity, 0, 255);
-        clayVeinSize = get(config, "clayVeinSize", CATEGORY_CLAY_SPAWN, clayVeinSize, 1, 255);
-        clayVeinSizeVariation =
-                get(config, "clayVeinSizeVariation", CATEGORY_CLAY_SPAWN, clayVeinSizeVariation, 0, clayVeinSize);
+        clayVeinSizeMax = get(config, "clayVeinSizeMax", CATEGORY_CLAY_SPAWN, clayVeinSizeMax, 1, 255);
+        clayVeinSizeMin = get(config, "clayVeinSizeMin", CATEGORY_CLAY_SPAWN, clayVeinSizeMin, 0, clayVeinSizeMax);
         claySpawnYMax = get(config, "claySpawnYMax", CATEGORY_CLAY_SPAWN, claySpawnYMax, 1, 255);
         claySpawnYMin = get(config, "claySpawnYMin", CATEGORY_CLAY_SPAWN, claySpawnYMin, 1, claySpawnYMax);
     }
@@ -88,9 +87,9 @@ public enum Settings implements ConfigSyncable
 
     public int clayVeinQuantity() { return clayVeinQuantity; }
 
-    public int clayVeinSize() { return clayVeinSize; }
+    public int clayVeinSizeMax() { return clayVeinSizeMax; }
 
-    public int clayVeinSizeVariation() { return clayVeinSizeVariation; }
+    public int clayVeinSizeMin() { return clayVeinSizeMin; }
 
     public boolean doChicksDropFeathers() { return doChicksDropFeathers; }
 
@@ -108,7 +107,7 @@ public enum Settings implements ConfigSyncable
         return Objects.toStringHelper(this).add("chickFeatherQuantity", chickFeatherQuantity)
                 .add("henFeatherQuantity", henFeatherQuantity).add("chickFeatherRarity", chickFeatherRarity)
                 .add("henFeatherRarity", henFeatherRarity).add("clayVeinQuantity", clayVeinQuantity)
-                .add("clayVeinSize", clayVeinSize).add("clayVeinSizeVariation", clayVeinSizeVariation)
+                .add("clayVeinSizeMax", clayVeinSizeMax).add("clayVeinSizeMin", clayVeinSizeMin)
                 .add("claySpawnYMin", claySpawnYMin).add("claySpawnYMax", claySpawnYMax)
                 .add("doChicksDropFeathers", doChicksDropFeathers).add("doHensDropFeathers", doHensDropFeathers)
                 .add("doPlantGrowable", doPlantGrowable).toString();

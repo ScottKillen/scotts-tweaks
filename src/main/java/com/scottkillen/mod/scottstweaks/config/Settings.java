@@ -25,8 +25,8 @@ public enum Settings implements ConfigSyncable
     private int clayVeinQuantity = 6;
     private int clayVeinSize = 12;
     private int clayVeinSizeVariation = 6;
-    private int claySpawnY = 60;
-    private int claySpawnYVariation = 50;
+    private int claySpawnYMin = 50;
+    private int claySpawnYMax = 60;
     private boolean doChicksDropFeathers = true;
     private boolean doHensDropFeathers = true;
     private boolean doPlantGrowable = true;
@@ -74,17 +74,17 @@ public enum Settings implements ConfigSyncable
         clayVeinSize = get(config, "clayVeinSize", CATEGORY_CLAY_SPAWN, clayVeinSize, 1, 255);
         clayVeinSizeVariation =
                 get(config, "clayVeinSizeVariation", CATEGORY_CLAY_SPAWN, clayVeinSizeVariation, 0, clayVeinSize);
-        claySpawnY = get(config, "claySpawnY", CATEGORY_CLAY_SPAWN, claySpawnY, 1, 255);
-        claySpawnYVariation = get(config, "claySpawnYVariation", CATEGORY_CLAY_SPAWN, claySpawnYVariation, 1, claySpawnY);
+        claySpawnYMax = get(config, "claySpawnYMax", CATEGORY_CLAY_SPAWN, claySpawnYMax, 1, 255);
+        claySpawnYMin = get(config, "claySpawnYMin", CATEGORY_CLAY_SPAWN, claySpawnYMin, 1, claySpawnYMax);
     }
 
     public int chickFeatherQuantity() { return chickFeatherQuantity; }
 
     public int chickFeatherRarity() { return chickFeatherRarity; }
 
-    public int claySpawnY() { return claySpawnY; }
+    public int claySpawnYMax() { return claySpawnYMax; }
 
-    public int claySpawnYVariation() { return claySpawnYVariation; }
+    public int claySpawnYMin() { return claySpawnYMin; }
 
     public int clayVeinQuantity() { return clayVeinQuantity; }
 
@@ -109,7 +109,7 @@ public enum Settings implements ConfigSyncable
                 .add("henFeatherQuantity", henFeatherQuantity).add("chickFeatherRarity", chickFeatherRarity)
                 .add("henFeatherRarity", henFeatherRarity).add("clayVeinQuantity", clayVeinQuantity)
                 .add("clayVeinSize", clayVeinSize).add("clayVeinSizeVariation", clayVeinSizeVariation)
-                .add("claySpawnY", claySpawnY).add("claySpawnYVariation", claySpawnYVariation)
+                .add("claySpawnYMin", claySpawnYMin).add("claySpawnYMax", claySpawnYMax)
                 .add("doChicksDropFeathers", doChicksDropFeathers).add("doHensDropFeathers", doHensDropFeathers)
                 .add("doPlantGrowable", doPlantGrowable).toString();
     }

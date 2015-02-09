@@ -1,5 +1,5 @@
 ## Scott's Tweaks
-**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.0.1 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
+**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.1.0 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
 *DEPENDS ON*: [Kore Sample 1.2.2 (or later) for MC 1.7.10][koresample]
 [latest]: https://github.com/MinecraftModArchive/ScottsTweaks/releases/latest
 [releases]: https://github.com/MinecraftModArchive/ScottsTweaks/releases
@@ -12,6 +12,7 @@ Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
 - Live chickens drop feathers as they go about their lives.
 - Growables (saplings, etc.) plant themselves if possible.
+- Clay generates in the overworld (not just in lake bottoms).
 
 [Contributing](#contributing)
 

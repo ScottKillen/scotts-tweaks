@@ -10,9 +10,10 @@ public enum Settings implements ConfigSyncable
 {
     INSTANCE;
     public static final String CONFIG_VERSION = "1";
+    private static final String CATEGORY_CLAY_SPAWN =
+            String.format("%s%sclay_spawn", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
     private static final String CATEGORY_FEATHER_DROP =
             String.format("%s%sfeather_drop", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
-
     private static final String CATEGORY_PLANTING =
             String.format("%s%splanting", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
 
@@ -21,14 +22,19 @@ public enum Settings implements ConfigSyncable
     private int henFeatherQuantity = 1;
     private int chickFeatherRarity = 50000;
     private int henFeatherRarity = 25000;
+    private int clayVeinQuantity = 6;
+    private int clayVeinSizeMax = 18;
+    private int clayVeinSizeMin = 12;
+    private int claySpawnYMin = 50;
+    private int claySpawnYMax = 60;
     private boolean doChicksDropFeathers = true;
     private boolean doHensDropFeathers = true;
     private boolean doPlantGrowable = true;
 
-    private static int get(Configuration config, String settingName, int defaultValue, int minumumValue,
-                           int maximumValue)
+    private static int get(Configuration config, String settingName, String category, int defaultValue,
+                           int minumumValue, int maximumValue)
     {
-        return config.getInt(settingName, CATEGORY_FEATHER_DROP, defaultValue, minumumValue, maximumValue,
+        return config.getInt(settingName, category, defaultValue, minumumValue, maximumValue,
                 getLocalizedComment(settingName));
     }
 
@@ -53,19 +59,37 @@ public enum Settings implements ConfigSyncable
     @Override
     public void syncConfig(Configuration config)
     {
-        chickFeatherQuantity = get(config, "chickFeatherQuantity", chickFeatherQuantity, 1, 10);
-        chickFeatherRarity = get(config, "chickFeatherRarity", chickFeatherRarity, 6000, Integer.MAX_VALUE);
+        chickFeatherQuantity = get(config, "chickFeatherQuantity", CATEGORY_FEATHER_DROP, chickFeatherQuantity, 1, 10);
+        chickFeatherRarity =
+                get(config, "chickFeatherRarity", CATEGORY_FEATHER_DROP, chickFeatherRarity, 6000, Integer.MAX_VALUE);
         doChicksDropFeathers = get(config, "doChicksDropFeathers", CATEGORY_FEATHER_DROP, doChicksDropFeathers);
         doHensDropFeathers = get(config, "doHensDropFeathers", CATEGORY_FEATHER_DROP, doHensDropFeathers);
-        henFeatherQuantity = get(config, "henFeatherQuantity", henFeatherQuantity, 1, 10);
-        henFeatherRarity = get(config, "henFeatherRarity", henFeatherRarity, 6000, Integer.MAX_VALUE);
+        henFeatherQuantity = get(config, "henFeatherQuantity", CATEGORY_FEATHER_DROP, henFeatherQuantity, 1, 10);
+        henFeatherRarity =
+                get(config, "henFeatherRarity", CATEGORY_FEATHER_DROP, henFeatherRarity, 6000, Integer.MAX_VALUE);
 
         doPlantGrowable = get(config, "doPlantGrowable", CATEGORY_PLANTING, doPlantGrowable);
+
+        clayVeinQuantity = get(config, "clayVeinQuantity", CATEGORY_CLAY_SPAWN, clayVeinQuantity, 0, 255);
+        clayVeinSizeMax = get(config, "clayVeinSizeMax", CATEGORY_CLAY_SPAWN, clayVeinSizeMax, 1, 255);
+        clayVeinSizeMin = get(config, "clayVeinSizeMin", CATEGORY_CLAY_SPAWN, clayVeinSizeMin, 0, clayVeinSizeMax);
+        claySpawnYMax = get(config, "claySpawnYMax", CATEGORY_CLAY_SPAWN, claySpawnYMax, 1, 255);
+        claySpawnYMin = get(config, "claySpawnYMin", CATEGORY_CLAY_SPAWN, claySpawnYMin, 1, claySpawnYMax);
     }
 
     public int chickFeatherQuantity() { return chickFeatherQuantity; }
 
     public int chickFeatherRarity() { return chickFeatherRarity; }
+
+    public int claySpawnYMax() { return claySpawnYMax; }
+
+    public int claySpawnYMin() { return claySpawnYMin; }
+
+    public int clayVeinQuantity() { return clayVeinQuantity; }
+
+    public int clayVeinSizeMax() { return clayVeinSizeMax; }
+
+    public int clayVeinSizeMin() { return clayVeinSizeMin; }
 
     public boolean doChicksDropFeathers() { return doChicksDropFeathers; }
 
@@ -82,7 +106,10 @@ public enum Settings implements ConfigSyncable
     {
         return Objects.toStringHelper(this).add("chickFeatherQuantity", chickFeatherQuantity)
                 .add("henFeatherQuantity", henFeatherQuantity).add("chickFeatherRarity", chickFeatherRarity)
-                .add("henFeatherRarity", henFeatherRarity).add("doChicksDropFeathers", doChicksDropFeathers)
-                .add("doHensDropFeathers", doHensDropFeathers).add("doPlantGrowable", doPlantGrowable).toString();
+                .add("henFeatherRarity", henFeatherRarity).add("clayVeinQuantity", clayVeinQuantity)
+                .add("clayVeinSizeMax", clayVeinSizeMax).add("clayVeinSizeMin", clayVeinSizeMin)
+                .add("claySpawnYMin", claySpawnYMin).add("claySpawnYMax", claySpawnYMax)
+                .add("doChicksDropFeathers", doChicksDropFeathers).add("doHensDropFeathers", doHensDropFeathers)
+                .add("doPlantGrowable", doPlantGrowable).toString();
     }
 }

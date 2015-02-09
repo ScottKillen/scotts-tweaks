@@ -1,4 +1,4 @@
-## Unreleased
+## 1.1.0
 - Added clay generation to overworld.
 
 ## 1.0.1

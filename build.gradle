@@ -23,6 +23,8 @@ apply plugin: 'maven'
 group = "com.scottkillen.mod"
 archivesBaseName = "ScottsTweaks"
 
+ext.apiKore = "./api/KoreSample/src/main/java"
+
 minecraft {
     version = project.mcversion + "-" + project.forgeversion
     runDir = "run"
@@ -30,15 +32,12 @@ minecraft {
     replace '${mod_version}', project.version
 }
 
-repositories {
-    mavenLocal()
-    maven {
-        url = 'http://maven.scottkillen.com/'
+sourceSets {
+    api {
+        java {
+            srcDir project.apiKore
+        }
     }
-}
-
-dependencies {
-    compile "com.scottkillen.mod:KoreSample:${project.ext.koreversion}:deobf"
 }
 
 processResources

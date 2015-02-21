@@ -1,6 +1,6 @@
 # Scott's Tweaks Changelog
 
-## Unreleased
+## 1.2.0
 - Update build environment to minecraft Forge 10.13.2.1291
 - Added bat and squid spawn control.
 

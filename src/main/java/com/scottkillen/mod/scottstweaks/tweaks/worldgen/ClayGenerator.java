@@ -1,4 +1,4 @@
-package com.scottkillen.mod.scottstweaks.tweaks;
+package com.scottkillen.mod.scottstweaks.tweaks.worldgen;
 
 import com.scottkillen.mod.scottstweaks.config.Settings;
 import cpw.mods.fml.common.IWorldGenerator;

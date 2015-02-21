@@ -1,19 +1,12 @@
-## Scott's Tweaks
-**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.2.0 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
-*DEPENDS ON*: [Kore Sample 1.2.5 (or later) for MC 1.7.10][koresample]
-[latest]: https://github.com/MinecraftModArchive/ScottsTweaks/releases/latest
-[releases]: https://github.com/MinecraftModArchive/ScottsTweaks/releases
-[changelog.md]: https://github.com/MinecraftModArchive/ScottsTweaks/blob/develop/src/main/resources/CHANGELOG.md
-[koresample]: http://scottk.us/KoreSample
+## Kore Sample
+**LATEST OFFICIAL VERSION**: [Kore Sample 1.2.5 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])
+[latest]: https://github.com/MinecraftModArchive/KoreSample/releases/latest
+[releases]: https://github.com/MinecraftModArchive/KoreSample/releases
+[changelog.md]: https://github.com/MinecraftModArchive/KoreSample/blob/develop/src/main/resources/CHANGELOG.md
 
-![Logo](https://cloud.githubusercontent.com/assets/1509989/5713248/03b7fbb8-9a88-11e4-915f-8d9f18d542d4.png)
+![KoreSample](https://raw.githubusercontent.com/MinecraftModArchive/KoreSample/develop/src/main/resources/assets/logo.png)
 
-Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
-
-- Live chickens drop feathers as they go about their lives.
-- Growables (saplings, etc.) plant themselves if possible.
-- Clay generates in the overworld (not just in lake bottoms).
-- Squid and bat spawning can be reduced or disabled.
+Kore Sample provides a set of tools and base classes for other Minecraft mods that depend on it.
 
 [Contributing](#contributing)
 
@@ -38,8 +31,8 @@ before submitting it.
 you add/change xxx?" or "Hey, I found an exploit.", etc.).
 5. Click `Submit new issue`, and wait for feedback!
 
-[issues]: /MinecraftModArchive/ScottsTweaks/issues
-[new]: /MinecraftModArchive/ScottsTweaks/issues/new
+[issues]: /MinecraftModArchive/KoreSample/issues
+[new]: /MinecraftModArchive/KoreSample/issues/new
 
 * * *
 

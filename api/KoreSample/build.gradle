@@ -21,9 +21,7 @@ apply plugin: 'forge'
 apply plugin: 'maven'
 
 group = "com.scottkillen.mod"
-archivesBaseName = "ScottsTweaks"
-
-ext.apiKore = "./api/KoreSample/src/main/java"
+archivesBaseName = "KoreSample"
 
 minecraft {
     version = project.mcversion + "-" + project.forgeversion
@@ -32,21 +30,12 @@ minecraft {
     replace '${mod_version}', project.version
 }
 
-sourceSets {
-    api {
-        java {
-            srcDir project.apiKore
-        }
-    }
-}
-
 processResources
 {
     // this will ensure that this task is redone when the versions change.
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
     inputs.property "forgeversion", project.ext.forgeversion
-    inputs.property "koreversion", project.ext.koreversion
 
     // replace stuff in the files we want.
     from(sourceSets.main.resources.srcDirs) {
@@ -54,7 +43,7 @@ processResources
         include '**/version.properties'
 
     	expand 'mod_version': project.version, 'minecraft_version': project.minecraft.version, 'forge_version': project
-                .ext.forgeversion, 'kore_version': project.ext.koreversion
+                .ext.forgeversion
     }
 
     // copy everything else, that we didn't do before
@@ -74,7 +63,7 @@ task sourcesJar(type: Jar, dependsOn: classes) {
         include '**/version.properties'
 
         expand 'mod_version': project.version, 'minecraft_version': project.minecraft.version, 'forge_version': project
-                .ext.forgeversion, 'kore_version': project.ext.koreversion
+                .ext.forgeversion
     }
 
     from(sourceSets.main.allSource) {
@@ -98,7 +87,7 @@ task deobfJar(type: Jar) {
         include '**/version.properties'
 
         expand 'mod_version': project.version, 'minecraft_version': project.minecraft.version, 'forge_version': project
-                .ext.forgeversion, 'kore_version': project.ext.koreversion
+                .ext.forgeversion
     }
 
     from(sourceSets.main.output) {

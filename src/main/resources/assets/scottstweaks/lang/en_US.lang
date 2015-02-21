@@ -12,3 +12,5 @@ config.scottstweaks:doChicksDropFeathers='True' enables feather drops from live 
 config.scottstweaks:doHensDropFeathers='True' enables feather drops from live adult chickens.
 config.scottstweaks:henFeatherQuantity=The number of feathers dropped by live adult chickens.
 config.scottstweaks:henFeatherRarity=The rarity of an adult chicken dropping feathers. Higher values are more rare.
+config.scottstweaks:batSpawnPercent=The percentage of successful bat spawns allowed to spawn a bat.
+config.scottstweaks:squidSpawnPercent=The percentage of successful squid spawns allowed to spawn a squid.

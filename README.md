@@ -13,6 +13,7 @@ Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 - Live chickens drop feathers as they go about their lives.
 - Growables (saplings, etc.) plant themselves if possible.
 - Clay generates in the overworld (not just in lake bottoms).
+- Squid and bat spawning can be reduced or disabled.
 
 [Contributing](#contributing)
 

@@ -12,6 +12,8 @@ public enum Settings implements ConfigSyncable
     public static final String CONFIG_VERSION = "1";
     private static final String CATEGORY_CLAY_SPAWN =
             String.format("%s%sclay_spawn", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
+    private static final String CATEGORY_ENDERMEN =
+            String.format("%s%sendermen", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
     private static final String CATEGORY_FEATHER_DROP =
             String.format("%s%sfeather_drop", Configuration.CATEGORY_GENERAL, Configuration.CATEGORY_SPLITTER);
     private static final String CATEGORY_PLANTING =
@@ -34,6 +36,7 @@ public enum Settings implements ConfigSyncable
     private boolean doChicksDropFeathers = true;
     private boolean doHensDropFeathers = true;
     private boolean doPlantGrowable = true;
+    private boolean doEndermenDrops = true;
 
     private static int get(Configuration config, String settingName, String category, int defaultValue,
                            int minumumValue, int maximumValue)
@@ -72,6 +75,7 @@ public enum Settings implements ConfigSyncable
         henFeatherRarity =
                 get(config, "henFeatherRarity", CATEGORY_FEATHER_DROP, henFeatherRarity, 6000, Integer.MAX_VALUE);
 
+        doEndermenDrops = get(config, "doEndermenDrops", CATEGORY_ENDERMEN, doEndermenDrops);
         doPlantGrowable = get(config, "doPlantGrowable", CATEGORY_PLANTING, doPlantGrowable);
 
         clayVeinQuantity = get(config, "clayVeinQuantity", CATEGORY_CLAY_SPAWN, clayVeinQuantity, 0, 255);
@@ -104,6 +108,8 @@ public enum Settings implements ConfigSyncable
 
     public boolean doPlantGrowable() { return doPlantGrowable;}
 
+    public boolean doEndermenDrops() { return doEndermenDrops;}
+
     public int henFeatherQuantity() { return henFeatherQuantity; }
 
     public int henFeatherRarity() { return henFeatherRarity; }
@@ -122,6 +128,6 @@ public enum Settings implements ConfigSyncable
                 .add("claySpawnYMin", claySpawnYMin).add("claySpawnYMax", claySpawnYMax)
                 .add("batSpawnPercent", batSpawnPercent).add("squidSpawnPercent", squidSpawnPercent)
                 .add("doChicksDropFeathers", doChicksDropFeathers).add("doHensDropFeathers", doHensDropFeathers)
-                .add("doPlantGrowable", doPlantGrowable).toString();
+                .add("doPlantGrowable", doPlantGrowable).add("doEndermenDrops", doEndermenDrops).toString();
     }
 }

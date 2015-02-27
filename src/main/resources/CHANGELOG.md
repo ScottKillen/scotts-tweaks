@@ -1,5 +1,8 @@
 # Scott's Tweaks Changelog
 
+## Unreleased
+- Added feature to force endermen to drop what they are holding when they die.
+
 ## 1.2.0
 - Update build environment to minecraft Forge 10.13.2.1291
 - Added bat and squid spawn control.

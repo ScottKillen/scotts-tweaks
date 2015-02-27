@@ -6,11 +6,12 @@
 #
 
 # Config file comments
+config.scottstweaks:batSpawnPercent=Limit bat spawning to this percentage of vanilla rate. (0 disables spawns; 100 preserves vanilla rate)
 config.scottstweaks:chickFeatherQuantity=The number of feathers dropped by live baby chickens.
 config.scottstweaks:chickFeatherRarity=The rarity of a baby chicken dropping feathers. Higher values are more rare.
 config.scottstweaks:doChicksDropFeathers='True' enables feather drops from live baby chickens.
+config.scottstweaks:doEndermenDrops='True' makes endermen drop blocks they are carrying when they die.
 config.scottstweaks:doHensDropFeathers='True' enables feather drops from live adult chickens.
 config.scottstweaks:henFeatherQuantity=The number of feathers dropped by live adult chickens.
 config.scottstweaks:henFeatherRarity=The rarity of an adult chicken dropping feathers. Higher values are more rare.
-config.scottstweaks:batSpawnPercent=Limit bat spawning to this percentage of vanilla rate. (0 disables spawns; 100 preserves vanilla rate)
 config.scottstweaks:squidSpawnPercent=Limit squid spawning to this percentage of vanilla rate. (0 disables spawns; 100 preserves vanilla rate)

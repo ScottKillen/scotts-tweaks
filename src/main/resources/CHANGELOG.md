@@ -1,6 +1,6 @@
 # Scott's Tweaks Changelog
 
-## Unreleased
+## 1.3.0
 - Added feature to force endermen to drop what they are holding when they die.
 
 ## 1.2.0

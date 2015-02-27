@@ -1,5 +1,5 @@
 ## Scott's Tweaks
-**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.2.0 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
+**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.3.0 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
 *DEPENDS ON*: [Kore Sample 1.2.5 (or later) for MC 1.7.10][koresample]
 [latest]: https://github.com/MinecraftModArchive/ScottsTweaks/releases/latest
 [releases]: https://github.com/MinecraftModArchive/ScottsTweaks/releases
@@ -14,6 +14,7 @@ Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 - Growables (saplings, etc.) plant themselves if possible.
 - Clay generates in the overworld (not just in lake bottoms).
 - Squid and bat spawning can be reduced or disabled.
+- Endermen drop the blocks they are carrying when they die.
 
 [Contributing](#contributing)
 

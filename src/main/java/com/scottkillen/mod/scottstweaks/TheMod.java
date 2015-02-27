@@ -8,6 +8,7 @@ import com.scottkillen.mod.koresample.compat.versionchecker.Versioned;
 import com.scottkillen.mod.koresample.config.ConfigEventHandler;
 import com.scottkillen.mod.scottstweaks.config.Settings;
 import com.scottkillen.mod.scottstweaks.tweaks.chicken.ChickenPlucker;
+import com.scottkillen.mod.scottstweaks.tweaks.endermen.EnderDumper;
 import com.scottkillen.mod.scottstweaks.tweaks.planting.Planter;
 import com.scottkillen.mod.scottstweaks.tweaks.spawncontrol.SpawnGovernor;
 import com.scottkillen.mod.scottstweaks.tweaks.worldgen.ClayGenerator;
@@ -59,6 +60,7 @@ public class TheMod implements Versioned
         new Planter().listen(MinecraftForge.EVENT_BUS);
         new ClayGenerator().install();
         new SpawnGovernor().listen(MinecraftForge.EVENT_BUS);
+        new EnderDumper().listen(MinecraftForge.EVENT_BUS);
     }
 
     @Override

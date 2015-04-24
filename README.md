@@ -7,7 +7,7 @@
 [changelog.md]: https://github.com/MinecraftModArchive/ScottsTweaks/blob/develop/src/main/resources/CHANGELOG.md
 [koresample]: http://scottk.us/KoreSample
 
-![Scott's Tweaks](https://raw.githubusercontent.com/MinecraftModArchive/ScottsTweaks/develop/src/main/resources/assets/logo.png)
+![Scott's Tweaks](https://raw.githubusercontent.com/MinecraftModArchive/ScottsTweaks/develop/art/logo/logo-128.png)
 
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 

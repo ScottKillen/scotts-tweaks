@@ -1,6 +1,7 @@
 ## Scott's Tweaks
-**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.3.0 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
-*DEPENDS ON*: [Kore Sample 1.2.5 (or later) for MC 1.7.10][koresample]
+**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.3.1 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all 
+releases][releases])<br />
+*DEPENDS ON*: [Kore Sample 1.3.2 (or later) for MC 1.7.10][koresample]
 
 [latest]: scottk.us/ScottsTweaksMod
 [releases]: https://github.com/MinecraftModArchive/ScottsTweaks/releases

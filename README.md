@@ -1,12 +1,14 @@
 ## Scott's Tweaks
-**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.3.0 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all releases][releases])<br />
-*DEPENDS ON*: [Kore Sample 1.2.5 (or later) for MC 1.7.10][koresample]
-[latest]: https://github.com/MinecraftModArchive/ScottsTweaks/releases/latest
+**LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.3.1 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all 
+releases][releases])<br />
+*DEPENDS ON*: [Kore Sample 1.3.2 (or later) for MC 1.7.10][koresample]
+
+[latest]: scottk.us/ScottsTweaksMod
 [releases]: https://github.com/MinecraftModArchive/ScottsTweaks/releases
 [changelog.md]: https://github.com/MinecraftModArchive/ScottsTweaks/blob/develop/src/main/resources/CHANGELOG.md
-[koresample]: http://scottk.us/KoreSample
+[koresample]: http://scottk.us/KoreSampleMod
 
-![Logo](https://cloud.githubusercontent.com/assets/1509989/5713248/03b7fbb8-9a88-11e4-915f-8d9f18d542d4.png)
+![Scott's Tweaks](https://raw.githubusercontent.com/MinecraftModArchive/ScottsTweaks/develop/art/logo/logo-128.png)
 
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
@@ -54,6 +56,16 @@ purpose in mind.
 * * *
 
 #### Licensing
+
+##### Logo
+
+The logo is a colorized version of ['Materials science icon'][logo-icon] by [Lorc][lorc-site] under [CC BY 3.0][ccby30].
+
+[logo-icon]: http://game-icons.net/lorc/originals/materials-science.html
+[lorc-site]: http://lorcblog.blogspot.com/
+[ccby30]: http://creativecommons.org/licenses/by/3.0/
+
+##### Software
 
 This is free and unencumbered software released into the public domain.
 

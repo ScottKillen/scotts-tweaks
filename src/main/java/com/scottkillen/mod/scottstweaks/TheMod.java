@@ -4,7 +4,6 @@ import com.google.common.base.Objects;
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 import com.scottkillen.mod.koresample.compat.Integrates;
-import com.scottkillen.mod.koresample.compat.versionchecker.Versioned;
 import com.scottkillen.mod.koresample.config.ConfigEventHandler;
 import com.scottkillen.mod.scottstweaks.config.Settings;
 import com.scottkillen.mod.scottstweaks.tweaks.chicken.ChickenPlucker;
@@ -25,10 +24,10 @@ import java.util.List;
         "StaticNonFinalField", "WeakerAccess", "StaticVariableMayNotBeInitialized", "NonConstantFieldWithUpperCaseName"
 })
 @Mod(modid = TheMod.MOD_ID, name = TheMod.MOD_NAME, version = TheMod.MOD_VERSION, useMetadata = true, guiFactory = TheMod.MOD_GUI_FACTORY)
-public class TheMod implements Versioned
+public class TheMod
 {
     static final String MOD_GUI_FACTORY = "com.scottkillen.mod.scottstweaks.config.client.ModGuiFactory";
-    static final String MOD_ID = "scottstweaks";
+    public static final String MOD_ID = "scottstweaks";
     static final String MOD_NAME = "Scott's Tweaks";
     static final String MOD_VERSION = "${mod_version}";
     @Instance(MOD_ID)
@@ -49,7 +48,6 @@ public class TheMod implements Versioned
                 new ConfigEventHandler(MOD_ID, event.getSuggestedConfigurationFile(), Settings.INSTANCE,
                         Settings.CONFIG_VERSION));
         configEventHandler.get().activate();
-        com.scottkillen.mod.koresample.TheMod.INSTANCE.addVersionCheck(this);
     }
 
     @SuppressWarnings("MethodMayBeStatic")
@@ -61,18 +59,6 @@ public class TheMod implements Versioned
         new ClayGenerator().install();
         new SpawnGovernor().listen(MinecraftForge.EVENT_BUS);
         new EnderDumper().listen(MinecraftForge.EVENT_BUS);
-    }
-
-    @Override
-    public String modID()
-    {
-        return MOD_ID;
-    }
-
-    @Override
-    public String versionInfoURL()
-    {
-        return "https://raw.githubusercontent.com/ScottKillen/glowing-ninja/master/ScottsTweaks.json";
     }
 
     @Override

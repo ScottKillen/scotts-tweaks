@@ -1,5 +1,9 @@
 # Scott's Tweaks Changelog
 
+## 1.3.1
+- Updated to latest version of KoreSample
+- Removed broken VersionChecker integration code.
+
 ## 1.3.0
 - Added feature to force endermen to drop what they are holding when they die.
 

@@ -9,6 +9,11 @@
 config.scottstweaks:batSpawnPercent=Limit bat spawning to this percentage of vanilla rate. (0 disables spawns; 100 preserves vanilla rate)
 config.scottstweaks:chickFeatherQuantity=The number of feathers dropped by live baby chickens.
 config.scottstweaks:chickFeatherRarity=The rarity of a baby chicken dropping feathers. Higher values are more rare.
+config.scottstweaks:claySpawnYMax=The maximum height at which clay deposits should spawn.
+config.scottstweaks:claySpawnYMin=The minimum height at which clay deposits should spawn.
+config.scottstweaks:clayVeinQuantity=The number of clay veins to attempt to spaen in a chunk.
+config.scottstweaks:clayVeinSizeMax=The maximum number of clay blocks to attempt to spawn in a vein.
+config.scottstweaks:clayVeinSizeMin=The minimum number of clay blocks to attempt to spawn in a vein.
 config.scottstweaks:doChicksDropFeathers='True' enables feather drops from live baby chickens.
 config.scottstweaks:doEndermenDrops='True' makes endermen drop blocks they are carrying when they die.
 config.scottstweaks:doHensDropFeathers='True' enables feather drops from live adult chickens.

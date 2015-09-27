@@ -55,6 +55,15 @@ purpose in mind.
 
 * * *
 
+#### Server Hosting
+
+This mod is tested on Akliz Game Servers. Sign up now at [akliz.com/scottkillen][akliz]. Use the code 'scottkillen' to receive a 20% discount on your first month.
+
+[![Akliz Hosting](https://raw.githubusercontent.com/MinecraftModArchive/assets/master/akliz%20660x90%20singular.png)][akliz]
+[akliz]: http://akliz.com/scottkillen
+
+* * *
+
 #### Licensing
 
 ##### Logo
@@ -85,3 +94,5 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 For more information, please refer to [unlicense.org](http://unlicense.org/).
 
 ![Public Domain](https://raw.githubusercontent.com/MinecraftModArchive/assets/master/pd-icon.png)
+
+[![Analytics](https://ga-beacon.appspot.com/UA-940955-7/ScottsTweaks/README.md)](https://github.com/igrigorik/ga-beacon?flat)

@@ -1,14 +1,14 @@
-## Scott's Tweaks
+<img src="https://raw.githubusercontent.com/MinecraftModArchive/ScottsTweaks/develop/art/logo/logo-128.png" align="right" />
+
+# Scott's Tweaks
 **LATEST OFFICIAL VERSION**: [Scott's Tweaks 1.3.1 for MC 1.7.10][latest] ([changelog][changelog.md]) ([all 
 releases][releases])<br />
 *DEPENDS ON*: [Kore Sample 1.3.2 (or later) for MC 1.7.10][koresample]
 
-[latest]: scottk.us/ScottsTweaksMod
-[releases]: https://github.com/MinecraftModArchive/ScottsTweaks/releases
-[changelog.md]: https://github.com/MinecraftModArchive/ScottsTweaks/blob/develop/src/main/resources/CHANGELOG.md
-[koresample]: http://scottk.us/KoreSampleMod
-
-![Scott's Tweaks](https://raw.githubusercontent.com/MinecraftModArchive/ScottsTweaks/develop/art/logo/logo-128.png)
+[latest]: https://www.curseforge.com/minecraft/mc-mods/scotts-tweaks
+[releases]: https://github.com/scottkillen-minecraft-mods/scotts-tweaks/releases
+[changelog.md]: https://github.com/scottkillen-minecraft-mods/scotts-tweaks/blob/master/src/main/resources/CHANGELOG.md
+[koresample]: https://www.curseforge.com/minecraft/mc-mods/kore-sample
 
 Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
@@ -26,7 +26,7 @@ Scott's Tweaks adds several of my favorite gameplay tweaks to the game.
 
 [Licensing](#licensing)
 
-### Contributing
+## Contributing
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -41,12 +41,12 @@ before submitting it.
 you add/change xxx?" or "Hey, I found an exploit.", etc.).
 5. Click `Submit new issue`, and wait for feedback!
 
-[issues]: /MinecraftModArchive/ScottsTweaks/issues
-[new]: /MinecraftModArchive/ScottsTweaks/issues/new
+[issues]: https://github.com/scottkillen-minecraft-mods/scotts-tweaks/issues
+[new]: https://github.com/scottkillen-minecraft-mods/scotts-tweaks/new
 
 * * *
 
-#### Mod Packs
+## Mod Packs
 
 This mod is released to the public domain. (*See [below](#licensing).*) The authors have disclaimed all rights and
 anyone can use this software and source code as they wish. This means that anyone has permission to distribute this
@@ -55,18 +55,9 @@ purpose in mind.
 
 * * *
 
-#### Server Hosting
+## Licensing
 
-This mod is tested on Akliz Game Servers. Sign up now at [akliz.com/scottkillen][akliz]. Use the code 'scottkillen' to receive a 20% discount on your first month.
-
-[![Akliz Hosting](https://raw.githubusercontent.com/MinecraftModArchive/assets/master/akliz%20660x90%20singular.png)][akliz]
-[akliz]: http://akliz.com/scottkillen
-
-* * *
-
-#### Licensing
-
-##### Logo
+### Logo
 
 The logo is a colorized version of ['Materials science icon'][logo-icon] by [Lorc][lorc-site] under [CC BY 3.0][ccby30].
 
@@ -74,7 +65,7 @@ The logo is a colorized version of ['Materials science icon'][logo-icon] by [Lor
 [lorc-site]: http://lorcblog.blogspot.com/
 [ccby30]: http://creativecommons.org/licenses/by/3.0/
 
-##### Software
+### Software
 
 This is free and unencumbered software released into the public domain.
 
@@ -93,6 +84,4 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 
 For more information, please refer to [unlicense.org](http://unlicense.org/).
 
-![Public Domain](https://raw.githubusercontent.com/MinecraftModArchive/assets/master/pd-icon.png)
-
-[![Analytics](https://ga-beacon.appspot.com/UA-940955-7/ScottsTweaks/README.md)](https://github.com/igrigorik/ga-beacon?flat)
+![Public Domain](https://user-images.githubusercontent.com/1509989/60475977-c5ffd680-9c47-11e9-9ca4-84684d6ca26a.png)
